@@ -1,0 +1,195 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/*reset*/
+
+*{
+  padding:0;
+  margin:0;
+}
+*,
+*::before
+*::after{
+  box-sizing: border-box;
+  
+}
+p{
+  display: block;
+}
+
+
+/*color, size etc...*/
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: league spartan;
+}
+p{
+  font-size: 17px;
+  color:hsl(300, 24%, 96%);
+}
+h1,
+.rating-info{
+  color: hsl(300, 43%, 22%);
+}
+.information{
+  color:hsl(303, 10%, 53%);
+}
+.verify-detail{
+  color: hsl(333, 80%, 67%);
+}
+h1{
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.rating-info,
+.name{
+  font-weight: 700;
+}
+
+/* layout */
+
+.info-article{
+
+  text-align: center;
+  
+}
+main{
+  width: 23.5em;
+
+ box-sizing: border-box;
+ padding: 1.9em;
+}
+.information{
+  line-height: 1.4em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.rating-container-1,
+.rating-container-2,
+.rating-container-3{
+  
+  background-color:hsl(300, 24%, 96%);
+  text-align: center;
+  border-radius: 0.5em;
+  padding: 1em 0;
+  margin-bottom: 1em;
+}
+.icon-stars{
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+.review-article{
+  background-color: hsl(300, 43%, 22%);
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  padding: 2.4em 1.5em;
+}
+.head{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.profil-pic{
+  border-radius: 2.5em;
+  width: 2.5em;
+  height: 2.5em;
+  overflow: hidden;
+  margin-right: 1.5em;
+}
+.profil-img{
+  width: 100%;
+}
+.profil-info{
+  line-height: 20px;
+}
+.review{
+  line-height: 25px;
+}
+.head-section{
+  display: flex;
+  flex-wrap:wrap;
+}
+.head-section article{
+  min-width: 316px;
+  flex:1;
+}
+.foot-section{
+  display: flex;
+  flex-wrap:wrap;
+}
+.review-article{
+ 
+min-width: 270px;
+flex:1;
+}
+@media (min-width:375px){
+  main{
+    width:min(1200px,100%);
+
+  }
+  
+}
+@media (min-width: 1030px){
+  .review-article{
+    max-width: 300px;   
+  }
+
+  .review-article-1{
+  margin-right:-2em;
+  margin-top:-2em;
+  margin-bottom:2em;
+}
+  .review-article-2{
+  margin-top:-1.5em;
+  margin-bottom:1.5em;
+  }
+  .review-article-3{
+ margin-left: -2em;
+  }
+
+  .foot-section{
+    margin-top: 3em;
+    justify-content: space-between; 
+  }
+    .rating-container-1,
+    .rating-container-2,
+    .rating-container-3{
+    max-width:445px;
+    display: flex;
+    align-items: center;
+    
+  }
+  .icon-stars{
+    margin:auto 2em;
+  }
+  .rating-container-1{
+    margin-right: 6em;
+    margin-left: -6em;
+  }
+  .rating-container-2{
+    margin-right: 3em;
+    margin-left:-3em;
+  }
+  .info-article{ 
+    text-align: left;
+    max-width: 420px;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  .head-section{
+    gap: 17em;
+  }
+  
+}
